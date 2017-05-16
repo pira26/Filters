@@ -1,0 +1,53 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 0px;
+  --contrast: 100%;
+  --sepia: 0%;
+  --saturate: 100%;
+  --opacity: 100%;
+  --invert: 0%;
+  --grayscale: 0%;
+  --brightness: 100%;
+  --hue-rotate: 0deg;
+}
+
+body {
+  text-align: center;
+  background-image: linear-gradient(#e53935, #e35d5b);
+  color: #fff;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Varela Round";
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+}
+
+input {
+  width: 100px;
+  padding: 4px;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur)) contrast(var(--contrast)) sepia(var(--sepia)) opacity(var(--opacity)) invert(var(--invert)) grayscale(var(--grayscale)) saturate(var(--saturate)) brightness(var(--brightness)) hue-rotate(var(--hue-rotate));
+}
